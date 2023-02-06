@@ -16,12 +16,29 @@ def main():
         index = 0
         for teacher in teacherTimetable:
             lessons = timetables.find_all("lesson", {'teacherids': teacher['id']})
-            lesson_ids = []
+            lessons_info = []
             for lesson in lessons:
-                lesson_ids.append(lesson.get('id'))
-            teacherTimetable[index]['lesson'] = lesson_ids
+                lesson_info = {
+                    "id": lesson.get('id'),
+                    "name": timetables.find('subject', {'id': lesson.get('subjectid')}).get('name'),
+                    "classes": []
+                }
+                
+                for i in range(0,6):
+                    days = "0" * i + "1" + "0" * (5-i)
+                    cards = timetables.find_all("card", {'lessonid': lesson_info['id'], 'days': days})
+                    day = {
+                        "day": days,
+                        "classroomid": cards[0].get("classroomids"),
+                        "periods": []
+                    }
+                    for card in cards:
+                        day[periods].append(card.get("period"))
+                    lesson_info.append(day)
+
+                lessons_info.append(lesson_info)
+            print(lessons_info)
             index+=1
  
 
-        print(teacherTimetable)
 main()
