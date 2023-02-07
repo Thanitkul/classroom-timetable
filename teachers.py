@@ -2,6 +2,9 @@ import sys
 from bs4 import BeautifulSoup
 
 def main():
+    sort_teacher_timetable()
+
+def sort_teacher_timetable():
     with open(sys.argv[1], 'r') as f:
         data = f.read()
         timetables = BeautifulSoup(data, "xml")
@@ -29,16 +32,23 @@ def main():
                     cards = timetables.find_all("card", {'lessonid': lesson_info['id'], 'days': days})
                     day = {
                         "day": days,
-                        "classroomid": cards[0].get("classroomids"),
+                        "classroomid": classroom(cards),
                         "periods": []
                     }
                     for card in cards:
-                        day[periods].append(card.get("period"))
-                    lesson_info.append(day)
+                        day['periods'].append(card.get("period"))
+                    lesson_info['classes'].append(day)
 
                 lessons_info.append(lesson_info)
-            print(lessons_info)
+            teacherTimetable[index]['periods'] = lessons_info
             index+=1
+
+        print(teacherTimetable)
  
+def classroom(cards):
+    if (len(cards) != 0) :
+        return cards[0].get("classroomids")
+    else:
+        pass
 
 main()
