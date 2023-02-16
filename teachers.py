@@ -51,8 +51,8 @@ def classroom(cards, timetables):
         name = ""
         if ',' in classroom_id:
             classroom_ids = classroom_id.split(",")
-            for id in classroom_ids:
-                name += timetables.find("classroom", {'id': id}).get("name") + ','
+            for room_id in classroom_ids:
+                name += timetables.find("classroom", {'id': room_id}).get("name") + ','
         else:
             name = timetables.find("classroom", {'id': classroom_id}).get("name")
         return name
