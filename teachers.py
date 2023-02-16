@@ -32,7 +32,7 @@ def sort_teacher_timetable():
                     cards = timetables.find_all("card", {'lessonid': lesson_info['id'], 'days': days})
                     day = {
                         "day": days,
-                        "classroomid": classroom(cards),
+                        "classroom": classroom(cards, timetables),
                         "periods": []
                     }
                     for card in cards:
@@ -45,9 +45,17 @@ def sort_teacher_timetable():
 
         print(teacherTimetable)
  
-def classroom(cards):
+def classroom(cards, timetables):
     if (len(cards) != 0) :
-        return cards[0].get("classroomids")
+        classroom_id = cards[0].get("classroomids")
+        name = ""
+        if ',' in classroom_id:
+            classroom_ids = classroom_id.split(",")
+            for id in classroom_ids:
+                name += timetables.find("classroom", {'id': id}).get("name") + ','
+        else:
+            name = timetables.find("classroom", {'id': classroom_id}).get("name")
+        return name
     else:
         pass
 
