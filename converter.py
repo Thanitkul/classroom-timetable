@@ -18,7 +18,6 @@ def writeOnExcel():
     for teacher in teacherTimetable:
         name = teacher['name']
         id = teacher['id']
-        print(name)
         worksheet = workbook.add_worksheet(name + id[:3])
         table = [
             ['Date', '1', '2', '3', '4', '5', '6', '7', '8',
@@ -36,8 +35,7 @@ def writeOnExcel():
             for _class in subject['classes']:
                 for period in _class['periods']:
                     table[_class['day'].find('1')+1][int(period)] = subjectName
-        print(table)  
-        print('-' * 50)
+
         for i in range(7):
             for j in range(16):
                 worksheet.write(i, j, table[i][j], cell_format)
