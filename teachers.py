@@ -42,8 +42,9 @@ def sort_teacher_timetable():
                 lessons_info.append(lesson_info)
             teacherTimetable[index]['subjects'] = lessons_info
             index+=1
-        return teacherTimetable
         # print(teacherTimetable)
+        return teacherTimetable
+        
  
 def classroom(cards, timetables):
     if (len(cards) != 0) :

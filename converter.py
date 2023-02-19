@@ -34,14 +34,19 @@ def writeOnExcel():
             subjectName = subject['name']
             for _class in subject['classes']:
                 for period in _class['periods']:
-                    table[_class['day'].find('1')+1][int(period)] = subjectName
+                    if _class['classroom'] != None:
+                        table[_class['day'].find('1')+1][int(period)] = subjectName + '\n' + _class['classroom'] 
+                    else:
+                        table[_class['day'].find(
+                            '1')+1][int(period)] = subjectName
 
         for i in range(7):
             for j in range(16):
                 worksheet.write(i, j, table[i][j], cell_format)
 
-        worksheet.set_column(0,16, 12)
-        worksheet.set_default_row(40)
+        worksheet.set_column(0,16, 14)
+        worksheet.set_default_row(105)
+        worksheet.set_landscape()
 
         #         for subject in teacher['subjects']:
         #     subjectName = subject['name']
