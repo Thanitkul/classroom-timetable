@@ -44,8 +44,9 @@ def writeOnExcel():
             for j in range(16):
                 worksheet.write(i, j, table[i][j], cell_format)
 
-        worksheet.set_column(0,16, 12.5)
-        worksheet.set_default_row(60)
+        worksheet.set_column(0,16, 14)
+        worksheet.set_default_row(105)
+        worksheet.set_landscape()
 
         #         for subject in teacher['subjects']:
         #     subjectName = subject['name']
