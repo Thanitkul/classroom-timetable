@@ -42,7 +42,7 @@ def sort_teacher_timetable():
                 lessons_info.append(lesson_info)
             teacherTimetable[index]['subjects'] = lessons_info
             index+=1
-        # print(teacherTimetable)
+        print(teacherTimetable)
         return teacherTimetable
         
  
