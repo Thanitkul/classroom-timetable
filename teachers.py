@@ -8,6 +8,8 @@ def sort_teacher_timetable():
     with open(sys.argv[1], 'r') as f:
         data = f.read()
         timetables = BeautifulSoup(data, "xml")
+        for club in timetables.find_all("subject", {'name':'Club'}):
+            club.decompose()
         teacherTimetable = []
 
         #teachers
@@ -27,8 +29,8 @@ def sort_teacher_timetable():
                     "classes": []
                 }
                 
-                for i in range(0,6):
-                    days = "0" * i + "1" + "0" * (5-i)
+                for i in range(0,5):
+                    days = "0" * i + "1" + "0" * (4-i)
                     cards = timetables.find_all("card", {'lessonid': lesson_info['id'], 'days': days})
                     day = {
                         "day": days,
@@ -50,7 +52,9 @@ def classroom(cards, timetables):
     if (len(cards) != 0) :
         classroom_id = cards[0].get("classroomids")
         name = ""
-        if ',' in classroom_id:
+        if classroom_id == "":
+            name = "Not assigned"
+        elif ',' in classroom_id:
             classroom_ids = classroom_id.split(",")
             for room_id in classroom_ids:
                 name += timetables.find("classroom", {'id': room_id}).get("name") + ','
