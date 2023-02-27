@@ -10,17 +10,17 @@ def sort_teacher_timetable():
         timetables = BeautifulSoup(data, "xml")
         for club in timetables.find_all("subject", {'name':'Club'}):
             club.decompose()
-        teacherTimetable = []
+        classroomTimetable = []
 
         #teachers
-        teachers = timetables.find_all('teacher')
-        for teacher in teachers:
-            teacherTimetable.append({ "id": teacher.get('id'), "name": teacher.get('name')})
+        classrooms = timetables.find_all('classroom')
+        for classroom in classrooms:
+            classroomTimetable.append({ "id": classroom.get('id'), "name": classroom.get('name')})
 
         #lessons
         index = 0
-        for teacher in teacherTimetable:
-            lessons = timetables.find_all("lesson", {'teacherids': teacher['id']})
+        for classroom in classroomTimetable:
+            lessons = timetables.find_all("lesson", {'classroomids': classroom['id']})
             lessons_info = []
             for lesson in lessons:
                 lesson_info = {
@@ -32,20 +32,24 @@ def sort_teacher_timetable():
                 for i in range(0,5):
                     days = "0" * i + "1" + "0" * (4-i)
                     cards = timetables.find_all("card", {'lessonid': lesson_info['id'], 'days': days})
+                    
                     day = {
                         "day": days,
-                        "classroom": classroom(cards, timetables),
+                        "teacher": [],
                         "periods": []
                     }
+                    teachers = timetables.find_all("teacher", {'id': lesson.get('teacherids')})
+                    for teacher in teachers:
+                        day['teacher'].append(teacher.get('name'))
                     for card in cards:
                         day['periods'].append(card.get("period"))
                     lesson_info['classes'].append(day)
 
                 lessons_info.append(lesson_info)
-            teacherTimetable[index]['subjects'] = lessons_info
+            classroomTimetable[index]['subjects'] = lessons_info
             index+=1
-        print(teacherTimetable)
-        return teacherTimetable
+        print(classroomTimetable)
+        return classroomTimetable
         
  
 def classroom(cards, timetables):
