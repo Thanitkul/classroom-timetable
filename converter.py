@@ -19,6 +19,7 @@ def writeOnExcel():
     cell_format.set_border(1)
     k = 0
     for teacher in teacherTimetable:
+        print(teacherTimetable)
         name = teacher['name']
         worksheet = workbook.add_worksheet(name)
         table = [
@@ -76,13 +77,13 @@ def writeOnExcel():
                 j += 1
             print(table[i])
         
-        worksheet.merge_range(0, 7, 5, 8, 'Break', cell_format)
+        # worksheet.merge_range(0, 7, 5, 8, 'Break', cell_format)
 
         worksheet.set_column(0,17, 14)
         worksheet.set_default_row(105)
         worksheet.set_landscape()
-        if k == 2:
-            break
+        if k == 3:
+            pass
         k += 1
     workbook.close()
 
@@ -97,6 +98,12 @@ def writeOnExcel():
          ['Tuesday', '', '', '', '', '', '', '', '', '', '', '', ['11 Taekwando\nTaekwondo Master', '11 Taekwando\nTaekwondo Master', '11 Taekwando\nTaekwondo Master'], ["8,9 Fundamental Math (Selected Students)\nP'Cee", "8, 9 Fundamental Math(Selected Students)\nP'Cee"], '', ''], 
          ['Wednesday', '', '', '', '', '', '', '', '', '', '', '', ['10 Taekwando\nTaekwondo Master', '10 Taekwando\nTaekwondo Master', '10 Taekwando\nTaekwondo Master'], '', '', ''], 
          ['Thursday', '', '', '', '', '', '', '', '', ["9CD Creative Drama\nP'Its", "9CD Creative Drama\nP'Its", "9CD Creative Drama\nP'Its"], ['9 Taekwando\nTaekwondo Master', '9 Taekwando\nTaekwondo Master', '9 Taekwando\nTaekwondo Master'], '', '', ''], 
-         ['Friday', '', '', '', '', '', '', '', '', '', '', '', ['12 Taekwando\nTaekwondo Master', '12 Taekwando\nTaekwondo Master', '12 Taekwando\nTaekwondo Master'], '', '',
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           '']]
+         ['Friday', '', '', '', '', '', '', '', '', '', '', '', ['12 Taekwando\nTaekwondo Master', '12 Taekwando\nTaekwondo Master', '12 Taekwando\nTaekwondo Master'], '', '']]
+
+    c = [['', '9.00-9.30', '9.30-10.00', '10.00-10.30', '10.30-11.00', '11.00-11.30', '11.30-12.00', '12.00-12.30', '12.30-13.00', '13.00-13.30', '13.30-14.00', '14.00-14.30', '14.30-15.00', '15.00-15.30', '15.30-16.00', '16.00-16.30', '16.30-17.00', '17.00-17.30'], 
+        ['Monday', ['8A Character Development', '8A Character Development'], ["8A Mathematics\nP'Paoju", "8A Mathematics\nP'Paoju"], '', '', '', '', '', '', '', '', '', ["8,9,10 Fundamental English (Selected Students)\nP'France", "8,9,10 Fundamental English (Selected Students)\nP'France"], '', ''], 
+        ['Tuesday', ["8A Chinese\nP'Noon", "8A Chinese\nP'Noon"], ['8A English\nMs.Leelee', '8A English\nMs.Leelee', '8A English\nMs.Leelee', '8A English\nMs.Leelee'], '', '', '', '', ["8A Mathematics\nP'Paoju", "8A Mathematics\nP'Paoju", "8A Mathematics\nP'Paoju", "8A Mathematics\nP'Paoju"], '', ''], 
+        ['Wednesday', ['8A English\nMs.Leelee', '8A English\nMs.Leelee', '8A English\nMs.Leelee', '8A English\nMs.Leelee'], ["8A Thai\nP'Prae", "8A Thai\nP'Prae"], '', '', ["8A ICT\nP'Ith", "8A ICT\nP'Ith"], ["8A Science\nP'Amy", "8A Science\nP'Amy"], '', ["8A Mathematics\nP'Paoju", "8A Mathematics\nP'Paoju"], '', ''], 
+        ['Thursday', ["8A Chinese\nP'Noon", "8A Chinese\nP'Noon"], ["8A Thai\nP'Prae", "8A Thai\nP'Prae"], '', '', '', ["8A Science\nP'Amy", "8A Science\nP'Amy"], '', ["8A Mathematics\nP'Paoju", "8A Mathematics\nP'Paoju", "8A Mathematics\nP'Paoju", "8A Mathematics\nP'Paoju"], '', ''], 
+        ['Friday', ["8A Science\nP'Amy", "8A Science\nP'Amy", "8A Science\nP'Amy", "8A Science\nP'Amy"], ['8A Reading Great Literature\nMs.Leelee', '8A Reading Great Literature\nMs.Leelee'], '', '', '', ['8A English\nMs.Leelee', '8A English\nMs.Leelee', '8A English\nMs.Leelee', '8A English\nMs.Leelee'], '', '', '', '','']]
 convertMain()
