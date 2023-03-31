@@ -55,7 +55,6 @@ def sort_teacher_timetable():
                         periods.sort()
                     groupPeriods = [list(group) for group in mit.consecutive_groups(periods)]
                     day['periods'] = groupPeriods
-                    print(day)
                     lesson_info['classes'].append(day)
 
                 lessons_info.append(lesson_info)
@@ -64,7 +63,32 @@ def sort_teacher_timetable():
         outFile = open('resultdata.txt', 'w')
         outFile.write(str(classroomTimetable))
         outFile.close()
-        return classroomTimetable
+        
+        days = ['10000', '01000', '00100', '00010', '00001']
+        rearrange = {
+            "FL 9": [],
+            "FL 9A": [],
+            "FL 11": []
+        }
+
+        for floor in rearrange:
+            for day in days:
+                thatday = {"day": day}
+                for room in classroomTimetable:
+                    thatday[room['name']] = []
+                    for _subject in room['subjects']:
+                        subject = { 'subject': _subject['name'], 'classes': []}
+                        for _class in _subject['classes']:
+                            print(_class)
+                            if thatday['day'] == _class['day']:
+                                subject['classes'].append(_class)
+                        thatday[room['name']].append(subject)
+                        
+                    break
+                rearrange[floor].append(thatday)
+        print(rearrange)
+
+        return rearrange
         
 
 main()
