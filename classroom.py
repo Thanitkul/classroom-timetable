@@ -79,7 +79,7 @@ def sort_teacher_timetable():
                     for _subject in room['subjects']:
                         subject = { 'subject': _subject['name'], 'classes': []}
                         for _class in _subject['classes']:
-                            print(_class)
+                            #print(_class)
                             if thatday['day'] == _class['day']:
                                 subject['classes'].append(_class)
                         thatday[room['name']].append(subject)
@@ -87,7 +87,6 @@ def sort_teacher_timetable():
                     break
                 rearrange[floor].append(thatday)
         print(rearrange)
-
         return rearrange
         
 
