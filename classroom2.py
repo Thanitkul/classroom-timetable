@@ -99,7 +99,7 @@ def sort_classroom_timetable():
         for day in classroomTimetable[floor]:
             for classroom in classroomTimetable[floor][day]:
                 #sort array of dict by element period
-                classroomTimetable[floor][day][classroom] = sorted(classroomTimetable[floor][day][classroom], key=lambda k: k['period'])
+                classroomTimetable[floor][day][classroom] = sorted(classroomTimetable[floor][day][classroom], key=lambda k: int(k['period']))
 
 
     with open('classroomTimetable.json', 'w') as f:
