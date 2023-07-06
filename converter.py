@@ -1,4 +1,4 @@
-from classroom import *
+from classroom2 import *
 import random
 import types
 import xlsxwriter
@@ -10,8 +10,8 @@ def convertMain():
 
 
 def writeOnExcel():
-    teacherTimetable = sort_teacher_timetable()
-    workbook = xlsxwriter.Workbook('result_xlsx_files/teacher_time_table.xlsx')
+    teacherTimetable = sort_classroom_timetable()
+    workbook = xlsxwriter.Workbook('result_xlsx_files/classroom_time_table.xlsx')
     cell_format = workbook.add_format()
     cell_format.set_text_wrap()
     cell_format.set_align('center')
