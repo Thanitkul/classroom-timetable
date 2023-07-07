@@ -460,16 +460,6 @@
         {
           "subjectName": "12Med Physics",
           "teacherNames": ["P'Fluke"],
-          "period": "5"
-        },
-        {
-          "subjectName": "12Med Physics",
-          "teacherNames": ["P'Fluke"],
-          "period": "6"
-        },
-        {
-          "subjectName": "12Med Physics",
-          "teacherNames": ["P'Fluke"],
           "period": "6"
         },
         {
@@ -937,8 +927,6 @@
           "period": "4"
         },
         { "subjectName": "8A ICT", "teacherNames": ["P'Ith"], "period": "5" },
-        { "subjectName": "8A ICT", "teacherNames": ["P'Ith"], "period": "5" },
-        { "subjectName": "8A ICT", "teacherNames": ["P'Ith"], "period": "6" },
         { "subjectName": "8A ICT", "teacherNames": ["P'Ith"], "period": "6" },
         {
           "subjectName": "9D Mathematics",
@@ -1120,42 +1108,12 @@
         {
           "subjectName": "11ABCD IELTS",
           "teacherNames": ["Ms.Sam"],
-          "period": "9"
-        },
-        {
-          "subjectName": "11ABCD IELTS",
-          "teacherNames": ["Ms.Sam"],
-          "period": "9"
-        },
-        {
-          "subjectName": "11ABCD IELTS",
-          "teacherNames": ["Ms.Sam"],
-          "period": "10"
-        },
-        {
-          "subjectName": "11ABCD IELTS",
-          "teacherNames": ["Ms.Sam"],
-          "period": "10"
-        },
-        {
-          "subjectName": "11ABCD IELTS",
-          "teacherNames": ["Ms.Sam"],
           "period": "10"
         },
         {
           "subjectName": "11BCD English A",
           "teacherNames": ["Ms.Sam"],
           "period": "11"
-        },
-        {
-          "subjectName": "11BCD English A",
-          "teacherNames": ["Ms.Sam"],
-          "period": "11"
-        },
-        {
-          "subjectName": "11BCD English A",
-          "teacherNames": ["Ms.Sam"],
-          "period": "12"
         },
         {
           "subjectName": "11BCD English A",
@@ -1282,16 +1240,6 @@
           "subjectName": "13 Chemistry",
           "teacherNames": ["P'Mink"],
           "period": "3"
-        },
-        {
-          "subjectName": "13 Chemistry",
-          "teacherNames": ["P'Mink"],
-          "period": "3"
-        },
-        {
-          "subjectName": "13 Chemistry",
-          "teacherNames": ["P'Mink"],
-          "period": "4"
         },
         {
           "subjectName": "13 Chemistry",
@@ -1698,16 +1646,6 @@
           "subjectName": "11BCD English A",
           "teacherNames": ["Ms.Sam"],
           "period": "3"
-        },
-        {
-          "subjectName": "11BCD English A",
-          "teacherNames": ["Ms.Sam"],
-          "period": "3"
-        },
-        {
-          "subjectName": "11BCD English A",
-          "teacherNames": ["Ms.Sam"],
-          "period": "4"
         },
         {
           "subjectName": "11BCD English A",
@@ -2854,16 +2792,6 @@
         {
           "subjectName": "12Med Physics",
           "teacherNames": ["P'Fluke"],
-          "period": "3"
-        },
-        {
-          "subjectName": "12Med Physics",
-          "teacherNames": ["P'Fluke"],
-          "period": "4"
-        },
-        {
-          "subjectName": "12Med Physics",
-          "teacherNames": ["P'Fluke"],
           "period": "4"
         },
         {
@@ -2912,16 +2840,6 @@
           "subjectName": "11BCD English A",
           "teacherNames": ["Ms.Sam"],
           "period": "3"
-        },
-        {
-          "subjectName": "11BCD English A",
-          "teacherNames": ["Ms.Sam"],
-          "period": "3"
-        },
-        {
-          "subjectName": "11BCD English A",
-          "teacherNames": ["Ms.Sam"],
-          "period": "4"
         },
         {
           "subjectName": "11BCD English A",
@@ -3419,32 +3337,12 @@
         {
           "subjectName": "12Com Critical Thinking",
           "teacherNames": ["P'Dave"],
-          "period": "9"
-        },
-        {
-          "subjectName": "12Com Critical Thinking",
-          "teacherNames": ["P'Dave"],
-          "period": "10"
-        },
-        {
-          "subjectName": "12Com Critical Thinking",
-          "teacherNames": ["P'Dave"],
           "period": "10"
         },
         {
           "subjectName": "12Com Portfolio and Project",
           "teacherNames": ["P'Bell", "P'Yok"],
           "period": "11"
-        },
-        {
-          "subjectName": "12Com Portfolio and Project",
-          "teacherNames": ["P'Bell", "P'Yok"],
-          "period": "11"
-        },
-        {
-          "subjectName": "12Com Portfolio and Project",
-          "teacherNames": ["P'Bell", "P'Yok"],
-          "period": "12"
         },
         {
           "subjectName": "12Com Portfolio and Project",
@@ -3798,16 +3696,6 @@
         {
           "subjectName": "12Med Physics",
           "teacherNames": ["P'Fluke"],
-          "period": "1"
-        },
-        {
-          "subjectName": "12Med Physics",
-          "teacherNames": ["P'Fluke"],
-          "period": "2"
-        },
-        {
-          "subjectName": "12Med Physics",
-          "teacherNames": ["P'Fluke"],
           "period": "2"
         },
         {
@@ -3828,22 +3716,7 @@
         {
           "subjectName": "12NBS Work Experience (Feedback)",
           "teacherNames": ["Ms.Shruti", "P'Ae", "P'Mod", "P'Pond", "Mr.Jason"],
-          "period": "5"
-        },
-        {
-          "subjectName": "12NBS Work Experience (Feedback)",
-          "teacherNames": ["Ms.Shruti", "P'Ae", "P'Mod", "P'Pond", "Mr.Jason"],
           "period": "6"
-        },
-        {
-          "subjectName": "12NBS Work Experience (Feedback)",
-          "teacherNames": ["Ms.Shruti", "P'Ae", "P'Mod", "P'Pond", "Mr.Jason"],
-          "period": "6"
-        },
-        {
-          "subjectName": "12Com Physics",
-          "teacherNames": ["P'Dave"],
-          "period": "9"
         },
         {
           "subjectName": "12Com Physics",
@@ -3856,24 +3729,9 @@
           "period": "10"
         },
         {
-          "subjectName": "12Com Physics",
-          "teacherNames": ["P'Dave"],
-          "period": "10"
-        },
-        {
           "subjectName": "12 Justice and Leadership",
           "teacherNames": ["Mr.Brian"],
           "period": "11"
-        },
-        {
-          "subjectName": "12 Justice and Leadership",
-          "teacherNames": ["Mr.Brian"],
-          "period": "11"
-        },
-        {
-          "subjectName": "12 Justice and Leadership",
-          "teacherNames": ["Mr.Brian"],
-          "period": "12"
         },
         {
           "subjectName": "12 Justice and Leadership",
@@ -3930,22 +3788,7 @@
         {
           "subjectName": "8A Mathematics",
           "teacherNames": ["P'Paoju"],
-          "period": "9"
-        },
-        {
-          "subjectName": "8A Mathematics",
-          "teacherNames": ["P'Paoju"],
           "period": "10"
-        },
-        {
-          "subjectName": "8A Mathematics",
-          "teacherNames": ["P'Paoju"],
-          "period": "10"
-        },
-        {
-          "subjectName": "8A Mathematics",
-          "teacherNames": ["P'Paoju"],
-          "period": "11"
         },
         {
           "subjectName": "8A Mathematics",
@@ -3958,24 +3801,9 @@
           "period": "12"
         },
         {
-          "subjectName": "8A Mathematics",
-          "teacherNames": ["P'Paoju"],
-          "period": "12"
-        },
-        {
           "subjectName": "8A English",
           "teacherNames": ["Ms.Leelee"],
           "period": "13"
-        },
-        {
-          "subjectName": "8A English",
-          "teacherNames": ["Ms.Leelee"],
-          "period": "13"
-        },
-        {
-          "subjectName": "8A English",
-          "teacherNames": ["Ms.Leelee"],
-          "period": "14"
         },
         {
           "subjectName": "8A English",
@@ -4314,16 +4142,6 @@
           "subjectName": "12NBS English for Business (Reading & Writing)",
           "teacherNames": ["Mr.Marc"],
           "period": "1"
-        },
-        {
-          "subjectName": "12NBS English for Business (Reading & Writing)",
-          "teacherNames": ["Mr.Marc"],
-          "period": "1"
-        },
-        {
-          "subjectName": "12NBS English for Business (Reading & Writing)",
-          "teacherNames": ["Mr.Marc"],
-          "period": "2"
         },
         {
           "subjectName": "12NBS English for Business (Reading & Writing)",
@@ -4748,22 +4566,7 @@
         {
           "subjectName": "12NBS Work Experience (Feedback)",
           "teacherNames": ["Ms.Shruti", "P'Ae", "P'Mod", "P'Pond", "Mr.Jason"],
-          "period": "5"
-        },
-        {
-          "subjectName": "12NBS Work Experience (Feedback)",
-          "teacherNames": ["Ms.Shruti", "P'Ae", "P'Mod", "P'Pond", "Mr.Jason"],
           "period": "6"
-        },
-        {
-          "subjectName": "12NBS Work Experience (Feedback)",
-          "teacherNames": ["Ms.Shruti", "P'Ae", "P'Mod", "P'Pond", "Mr.Jason"],
-          "period": "6"
-        },
-        {
-          "subjectName": "8A English",
-          "teacherNames": ["Ms.Leelee"],
-          "period": "9"
         },
         {
           "subjectName": "8A English",
@@ -4776,24 +4579,9 @@
           "period": "10"
         },
         {
-          "subjectName": "8A English",
-          "teacherNames": ["Ms.Leelee"],
-          "period": "10"
-        },
-        {
           "subjectName": "8A Mathematics",
           "teacherNames": ["P'Paoju"],
           "period": "11"
-        },
-        {
-          "subjectName": "8A Mathematics",
-          "teacherNames": ["P'Paoju"],
-          "period": "11"
-        },
-        {
-          "subjectName": "8A Mathematics",
-          "teacherNames": ["P'Paoju"],
-          "period": "12"
         },
         {
           "subjectName": "8A Mathematics",
@@ -4850,16 +4638,6 @@
         {
           "subjectName": "12Med BMAT: Problem Solving",
           "teacherNames": ["P'Korn"],
-          "period": "11"
-        },
-        {
-          "subjectName": "12Med BMAT: Problem Solving",
-          "teacherNames": ["P'Korn"],
-          "period": "12"
-        },
-        {
-          "subjectName": "12Med BMAT: Problem Solving",
-          "teacherNames": ["P'Korn"],
           "period": "12"
         }
       ],
@@ -4901,12 +4679,6 @@
           "period": "6"
         },
         { "subjectName": "8A Thai", "teacherNames": ["P'Prae"], "period": "9" },
-        { "subjectName": "8A Thai", "teacherNames": ["P'Prae"], "period": "9" },
-        {
-          "subjectName": "8A Thai",
-          "teacherNames": ["P'Prae"],
-          "period": "10"
-        },
         {
           "subjectName": "8A Thai",
           "teacherNames": ["P'Prae"],
@@ -4916,16 +4688,6 @@
           "subjectName": "8A Character Development",
           "teacherNames": [],
           "period": "11"
-        },
-        {
-          "subjectName": "8A Character Development",
-          "teacherNames": [],
-          "period": "11"
-        },
-        {
-          "subjectName": "8A Character Development",
-          "teacherNames": [],
-          "period": "12"
         },
         {
           "subjectName": "8A Character Development",
@@ -5098,22 +4860,7 @@
         {
           "subjectName": "8A Science",
           "teacherNames": ["P'Amy"],
-          "period": "1"
-        },
-        {
-          "subjectName": "8A Science",
-          "teacherNames": ["P'Amy"],
           "period": "2"
-        },
-        {
-          "subjectName": "8A Science",
-          "teacherNames": ["P'Amy"],
-          "period": "2"
-        },
-        {
-          "subjectName": "8A Science",
-          "teacherNames": ["P'Amy"],
-          "period": "3"
         },
         {
           "subjectName": "8A Science",
@@ -5126,24 +4873,9 @@
           "period": "4"
         },
         {
-          "subjectName": "8A Science",
-          "teacherNames": ["P'Amy"],
-          "period": "4"
-        },
-        {
           "subjectName": "8A Reading Great Literature",
           "teacherNames": ["Ms.Leelee"],
           "period": "5"
-        },
-        {
-          "subjectName": "8A Reading Great Literature",
-          "teacherNames": ["Ms.Leelee"],
-          "period": "5"
-        },
-        {
-          "subjectName": "8A Reading Great Literature",
-          "teacherNames": ["Ms.Leelee"],
-          "period": "6"
         },
         {
           "subjectName": "8A Reading Great Literature",
@@ -5537,16 +5269,6 @@
         {
           "subjectName": "13Med,13Com Character Development",
           "teacherNames": [],
-          "period": "1"
-        },
-        {
-          "subjectName": "13Med,13Com Character Development",
-          "teacherNames": [],
-          "period": "2"
-        },
-        {
-          "subjectName": "13Med,13Com Character Development",
-          "teacherNames": [],
           "period": "2"
         },
         {
@@ -5843,21 +5565,9 @@
         {
           "subjectName": "8A Chinese",
           "teacherNames": ["P'Noon"],
-          "period": "1"
-        },
-        {
-          "subjectName": "8A Chinese",
-          "teacherNames": ["P'Noon"],
-          "period": "2"
-        },
-        {
-          "subjectName": "8A Chinese",
-          "teacherNames": ["P'Noon"],
           "period": "2"
         },
         { "subjectName": "8A Thai", "teacherNames": ["P'Prae"], "period": "3" },
-        { "subjectName": "8A Thai", "teacherNames": ["P'Prae"], "period": "3" },
-        { "subjectName": "8A Thai", "teacherNames": ["P'Prae"], "period": "4" },
         { "subjectName": "8A Thai", "teacherNames": ["P'Prae"], "period": "4" },
         {
           "subjectName": "11F Mathematics",
@@ -6053,16 +5763,6 @@
           "subjectName": "13 Creative Drama",
           "teacherNames": ["P'Its"],
           "period": "5"
-        },
-        {
-          "subjectName": "13 Creative Drama",
-          "teacherNames": ["P'Its"],
-          "period": "5"
-        },
-        {
-          "subjectName": "13 Creative Drama",
-          "teacherNames": ["P'Its"],
-          "period": "6"
         },
         {
           "subjectName": "13 Creative Drama",
@@ -6952,32 +6652,12 @@
         {
           "subjectName": "12Com Physics",
           "teacherNames": ["P'Dave"],
-          "period": "9"
-        },
-        {
-          "subjectName": "12Com Physics",
-          "teacherNames": ["P'Dave"],
-          "period": "10"
-        },
-        {
-          "subjectName": "12Com Physics",
-          "teacherNames": ["P'Dave"],
           "period": "10"
         },
         {
           "subjectName": "12Com Physics",
           "teacherNames": ["P'Dave"],
           "period": "11"
-        },
-        {
-          "subjectName": "12Com Physics",
-          "teacherNames": ["P'Dave"],
-          "period": "11"
-        },
-        {
-          "subjectName": "12Com Physics",
-          "teacherNames": ["P'Dave"],
-          "period": "12"
         },
         {
           "subjectName": "12Com Physics",

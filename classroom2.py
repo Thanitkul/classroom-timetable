@@ -101,6 +101,13 @@ def sort_classroom_timetable():
                 #sort array of dict by element period
                 classroomTimetable[floor][day][classroom] = sorted(classroomTimetable[floor][day][classroom], key=lambda k: int(k['period']))
 
+    #delete duplicate periods in the same day
+    for floor in classroomTimetable:
+        for day in classroomTimetable[floor]:
+            for classroom in classroomTimetable[floor][day]:
+                classroomTimetable[floor][day][classroom] = list(mit.unique_everseen(classroomTimetable[floor][day][classroom], key=lambda k: k['period']))
+
+
 
     with open('classroomTimetable.json', 'w') as f:
         f.write(str(classroomTimetable))
