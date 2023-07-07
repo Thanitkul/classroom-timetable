@@ -109,8 +109,9 @@ def sort_classroom_timetable():
 
 
 
-    with open('classroomTimetable.json', 'w') as f:
-        f.write(str(classroomTimetable))
+    # with open('classroomTimetable.json', 'w') as f:
+    #     f.write(str(classroomTimetable))
+    return classroomTimetable
 
 
 def add_room(classroomTimetable, name, floor):

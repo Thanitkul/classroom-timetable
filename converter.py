@@ -79,9 +79,7 @@ def writeOnExcel():
         
         # worksheet.merge_range(0, 7, 5, 8, 'Break', cell_format)
 
-        worksheet.set_column(0,17, 14)
-        worksheet.set_default_row(105)
-        worksheet.set_landscape()
+
         if k == 3:
             pass
         k += 1
