@@ -1,7 +1,6 @@
-xml file
+Program for converting XML file from ASCtimetable to pdf illustrate timetable for each room.
 
-old file: `asctt2012.xml`
-new file: `asctt2012_7.3.xml`
+Currently only work for a specific school but can be altered by add floors.
 
 To run the program
 
@@ -9,10 +8,10 @@ To run the program
 
 and
 
-`python teachers.py asctt2012.xml`
+`python teachers.py {filename}`
 
 or
 
-`python converter.py asctt2012xml` (for creating the excel file)
+`python converter.py {filename}` (for creating the excel file)
 
 
