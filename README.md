@@ -8,10 +8,10 @@ To run the program
 
 and
 
-`python teachers.py {filename}`
+`python classroom2.py {filename}`
 
 or
 
-`python converter.py {filename}` (for creating the excel file)
+`python converter2.py {filename}` (for creating the excel file)
 
 
